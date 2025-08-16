@@ -1,13 +1,13 @@
 [gd_scene load_steps=3 format=3 uid="uid://cyw4jffxrxk6s"]
 
 [ext_resource type="Script" uid="uid://d2romckfkc727" path="res://scenes/weapons/pistol.gd" id="1_r3071"]
-[ext_resource type="Texture2D" uid="uid://dj6jkum3o1xam" path="res://assets/weapons/gun.png" id="2_r3071"]
+[ext_resource type="Texture2D" uid="uid://v6d7hu77dr83" path="res://assets/weapons/output-onlinepngtools.png" id="2_r3071"]
 
 [node name="Pistol" type="Node2D"]
 script = ExtResource("1_r3071")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(0.02, 0.02)
+scale = Vector2(0.03, 0.03)
 texture = ExtResource("2_r3071")
 
 [node name="Timer" type="Timer" parent="."]
@@ -17,6 +17,6 @@ one_shot = true
 [node name="LaserStarts" type="Node2D" parent="."]
 
 [node name="Marker2D" type="Marker2D" parent="LaserStarts"]
-position = Vector2(3, 0)
+position = Vector2(7, -1)
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

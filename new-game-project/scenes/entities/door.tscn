@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://bqawbd8k8rlwn"]
+[gd_scene load_steps=7 format=3 uid="uid://bqawbd8k8rlwn"]
 
 [ext_resource type="Texture2D" uid="uid://d28lf7478mnwr" path="res://assets/objects/Mikeehrmantraut.webp" id="1_dn7cs"]
 [ext_resource type="Script" uid="uid://jijs83bm34o5" path="res://scenes/entities/door.gd" id="1_ewl7v"]
+[ext_resource type="AudioStream" uid="uid://bag47uj0vg3yj" path="res://assets/sounds/better-call-saul-intro.mp3" id="3_htbgl"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_de05j"]
 size = Vector2(53, 37)
@@ -37,6 +38,9 @@ shape = SubResource("RectangleShape2D_htbgl")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-6.5, -6)
 shape = SubResource("RectangleShape2D_ewl7v")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_htbgl")
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

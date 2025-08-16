@@ -17,10 +17,11 @@ func _process(_delta):
 	$Player/Camera2D/UI/ProgressBar.max_value = Globals.maxHealth
 	$Player/Camera2D/UI/ProgressBar.value = Globals.health
 	if Globals.health <= 25:
-		$DirectionalLight2D.color = Color("#00cbb0cd")
+		$PointLight2D.color = Color("#00cbb0cd")
 		$Player/Camera2D/UI/ProgressBar.modulate = Color.RED
 	else:
-		$DirectionalLight2D.color = Color.BLACK
+		$PointLight2D.color = Color("#00000049")
+
 		$Player/Camera2D/UI/ProgressBar.modulate = Color.GREEN
 		
 	#Displaying ammo

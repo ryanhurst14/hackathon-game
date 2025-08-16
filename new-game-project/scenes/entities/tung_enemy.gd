@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 var speed: int = 30
-var health : int = 1
+var health : int = Globals.enemyHealth
 var playerInRange : Node2D = null
 var damageInterval = 1
 var damageTimer = 1

@@ -9,7 +9,8 @@ var gotBlue = false
 var gotRed = false
 var gameActive = true 
 var maxHealth = 75
-
+var pistolDamage = 1
+var enemyHealth = 2
 var roundCount = 1:
 	get:
 		return roundCount

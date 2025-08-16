@@ -10,12 +10,6 @@ var reloading = false
 func _ready() -> void:
 	pass # Replace with function body.
 
-func ending():
-	if Globals.gotBlue:
-		print("ENDING")
-	else:
-		print("gettehblue")
-
 func hit(damage):
 	if vulnerable:
 		canHeal = false
@@ -40,11 +34,13 @@ func _process(_delta: float) -> void:
 	#Laser shooting input
 	if Input.is_action_just_pressed("primary") and $Pistol.can_shoot and Globals.ammo_amount > 0:
 		Globals.ammo_amount -= 1
+		$AudioStreamPlayer2D.play()
 		$Pistol.can_shoot = false
 		$Pistol.shoot()
 
 	if Input.is_action_just_pressed("reload") and not reloading and Globals.total_amount > 0:
 		reloading = true
+		$AudioStreamPlayer2D2.play()
 		var toReload = min($Pistol.magCap, Globals.total_amount, $Pistol.magCap - Globals.ammo_amount)
 		$ReloadTimer.start()
 		await $ReloadTimer.timeout

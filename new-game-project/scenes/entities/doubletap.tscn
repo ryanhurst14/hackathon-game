@@ -1,0 +1,40 @@
+[gd_scene load_steps=6 format=3 uid="uid://bddh48dcc43u6"]
+
+[ext_resource type="Script" uid="uid://344u62oqpnjw" path="res://scenes/entities/doubletap.gd" id="1_0uuf8"]
+[ext_resource type="Texture2D" uid="uid://btpqxn0akd23c" path="res://assets/objects/headphones-headset-icon-white-headphones-4877046890294e15a895441eecf6b61e.png" id="1_cxw58"]
+[ext_resource type="AudioStream" uid="uid://bt8plsov5ly3n" path="res://assets/objects/laufey-101soundboards.mp3" id="3_nf5i0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0uuf8"]
+size = Vector2(67, 93)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nf5i0"]
+size = Vector2(84, 112)
+
+[node name="Doubletap" type="StaticBody2D"]
+scale = Vector2(0.3, 0.3)
+script = ExtResource("1_0uuf8")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-1, -1)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_cxw58")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 3)
+shape = SubResource("RectangleShape2D_0uuf8")
+
+[node name="Enter" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enter"]
+position = Vector2(0, 2)
+shape = SubResource("RectangleShape2D_nf5i0")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_nf5i0")
+
+[node name="MusicTimer" type="Timer" parent="."]
+wait_time = 5.0
+
+[connection signal="body_entered" from="Enter" to="." method="_on_enter_body_entered"]
+[connection signal="body_exited" from="Enter" to="." method="_on_enter_body_exited"]
+[connection signal="timeout" from="MusicTimer" to="." method="_on_music_timer_timeout"]

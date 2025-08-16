@@ -42,6 +42,7 @@ func createSpawn():
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	if body.name == "Player":
+		$AudioStreamPlayer2D.play()
 		playerInside = true
 		buyLabel.text = "Press F to buy the door for %d" % doorPrice
 		buyLabel.visible = true
@@ -49,5 +50,6 @@ func _on_area_2d_body_entered(body: Node2D) -> void:
 
 func _on_area_2d_body_exited(body: Node2D) -> void:
 	if body.name == "Player":
+		$AudioStreamPlayer2D.stop()
 		playerInside = false
 		buyLabel.visible = false
