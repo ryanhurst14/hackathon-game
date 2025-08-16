@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://bviuyivrmc56n"]
+[gd_scene load_steps=5 format=3 uid="uid://bviuyivrmc56n"]
 
 [ext_resource type="Texture2D" uid="uid://q7f6yvf4bce7" path="res://assets/enemies/Tung-Tung-Tung-Sahur-TikTok-Meme-Character-Transparent.png" id="1_e3ca3"]
 [ext_resource type="Script" uid="uid://d2brl7tw7wb7v" path="res://scenes/entities/tung_enemy.gd" id="1_q0t6c"]
@@ -6,8 +6,11 @@
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_q0t6c"]
 height = 88.0
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_q0t6c"]
+radius = 27.6134
+
 [node name="TungEnemy" type="CharacterBody2D"]
-scale = Vector2(2, 2)
+scale = Vector2(0.4, 0.4)
 collision_layer = 2
 collision_mask = 25
 script = ExtResource("1_q0t6c")
@@ -22,3 +25,17 @@ position = Vector2(3, 0)
 shape = SubResource("CapsuleShape2D_q0t6c")
 
 [node name="Timers" type="Node" parent="."]
+
+[node name="DamageTimer" type="Timer" parent="Timers"]
+wait_time = 0.3
+one_shot = true
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(2.5, 1.90735e-06)
+shape = SubResource("CircleShape2D_q0t6c")
+
+[connection signal="timeout" from="Timers/DamageTimer" to="." method="_on_damage_timer_timeout"]
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

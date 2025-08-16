@@ -26,4 +26,9 @@ wait_time = 0.1
 [node name="Pistol" parent="." instance=ExtResource("3_1ie0h")]
 position = Vector2(4, 1)
 
+[node name="HitTimer" type="Timer" parent="."]
+wait_time = 0.2
+one_shot = true
+
 [connection signal="bullet" from="Pistol" to="." method="_on_pistol_bullet"]
+[connection signal="timeout" from="HitTimer" to="." method="_on_hit_timer_timeout"]

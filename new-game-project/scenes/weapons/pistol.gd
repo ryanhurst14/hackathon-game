@@ -2,6 +2,7 @@ extends Node2D
 var labubu_scene : PackedScene = preload("res://scenes/weapons/labubu.tscn")
 var can_shoot : bool = true
 var damage : int = 5
+var magCap : int = 10
 
 signal bullet(pos, direction)
 func shoot():

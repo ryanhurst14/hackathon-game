@@ -8,12 +8,15 @@ var player_direction
 
 var total_amount = 40:
 	get:
+		if total_amount <= 0:
+			return 0
+		
 		return total_amount
 	set(value):
 		total_amount = value
 		total_change.emit()
 		
-var ammo_amount = 100:
+var ammo_amount = 10:
 	get:
 		return ammo_amount
 	set(value):
@@ -21,7 +24,6 @@ var ammo_amount = 100:
 		ammo_change.emit()
 		
 	
-var player_vulnerable : bool = true
 var health = 75:
 	get:
 		return health
@@ -29,8 +31,8 @@ var health = 75:
 		if value > health:
 			health = min(value, 100)
 		else:
-			if player_vulnerable:
-				health = value
-				player_vulnerable = false
-				#timer
+			health = value
 		health_change.emit()
+		
+		if value < 0:
+			print("DEAD")
