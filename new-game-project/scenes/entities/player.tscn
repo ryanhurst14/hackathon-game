@@ -5,24 +5,25 @@
 [ext_resource type="PackedScene" uid="uid://cyw4jffxrxk6s" path="res://scenes/weapons/pistol.tscn" id="3_1ie0h"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_b0kkn"]
-size = Vector2(53, 104)
+size = Vector2(6, 9)
 
 [node name="Player" type="CharacterBody2D"]
+collision_mask = 22
 script = ExtResource("1_08t41")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(-1, -9)
-scale = Vector2(0.11179, 0.114932)
+position = Vector2(-3.8147e-06, 0)
+scale = Vector2(0.0111506, 0.0095924)
 texture = ExtResource("2_08t41")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-0.5, -17)
+position = Vector2(0, -0.5)
 shape = SubResource("RectangleShape2D_b0kkn")
 
 [node name="ShotTimer" type="Timer" parent="."]
 wait_time = 0.1
 
 [node name="Pistol" parent="." instance=ExtResource("3_1ie0h")]
-position = Vector2(40, 10)
+position = Vector2(4, 1)
 
 [connection signal="bullet" from="Pistol" to="." method="_on_pistol_bullet"]

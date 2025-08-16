@@ -4,18 +4,20 @@
 [ext_resource type="Texture2D" uid="uid://ccyyfncckfuxy" path="res://assets/labubus/Labubu-figure-Image-png-transparent-background.png" id="2_86x34"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1uvdp"]
-size = Vector2(28, 60)
+size = Vector2(4, 7)
 
 [node name="labubu" type="Area2D"]
+collision_layer = 8
+collision_mask = 18
 script = ExtResource("1_0f7yo")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(-2, 3)
-scale = Vector2(0.0631851, 0.0694097)
+position = Vector2(-2.38419e-07, 0)
+scale = Vector2(0.00692158, 0.0084809)
 texture = ExtResource("2_86x34")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-2, -3)
+position = Vector2(0, -0.5)
 shape = SubResource("RectangleShape2D_1uvdp")
 
 [node name="Despawn" type="Timer" parent="."]

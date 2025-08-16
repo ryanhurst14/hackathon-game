@@ -1,6 +1,8 @@
 extends Node2D
 var labubu_scene : PackedScene = preload("res://scenes/weapons/labubu.tscn")
 var can_shoot : bool = true
+var damage : int = 5
+
 signal bullet(pos, direction)
 func shoot():
 	can_shoot = false
@@ -13,6 +15,7 @@ func shoot():
 func create_shot(pos, direction):
 	var labubu = labubu_scene.instantiate() as Area2D
 	labubu.position = pos
+	labubu.damage = damage
 	labubu.rotation_degrees = rad_to_deg(direction.angle()) + 90
 	labubu.direction = direction
 	get_tree().current_scene.get_node("Projectiles").add_child(labubu)

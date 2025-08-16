@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 
-@export var max_speed: int = 2500
+@export var max_speed: int = 100
 var speed: int = max_speed
 
 # Called when the node enters the scene tree for the first time.

@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://cislah840cd8"]
+
+[node name="Hotbar" type="HBoxContainer"]
+offset_right = 40.0
+offset_bottom = 40.0
