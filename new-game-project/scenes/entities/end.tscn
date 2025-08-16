@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://blkj3o7a2mrll"]
+
+[ext_resource type="Script" uid="uid://dwms0e62bqh8u" path="res://end.gd" id="1_pafgy"]
+[ext_resource type="Texture2D" uid="uid://b8pulq5stgctn" path="res://assets/Sprout Lands - Sprites - Basic pack/Tilesets/Doors.png" id="2_jdt66"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d2nd3"]
+size = Vector2(20, 68)
+
+[node name="End" type="Area2D"]
+script = ExtResource("1_pafgy")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_jdt66")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_d2nd3")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

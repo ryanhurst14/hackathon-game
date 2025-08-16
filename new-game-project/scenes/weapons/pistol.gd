@@ -20,7 +20,6 @@ func create_shot(pos, direction):
 	labubu.rotation_degrees = rad_to_deg(direction.angle()) + 90
 	labubu.direction = direction
 	get_tree().current_scene.get_node("Projectiles").add_child(labubu)
-	
 
 func _on_timer_timeout() -> void:
 	can_shoot = true

@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=4 uid="uid://873d56h0mi1d"]
+[gd_scene load_steps=14 format=4 uid="uid://873d56h0mi1d"]
 
 [ext_resource type="PackedScene" uid="uid://dcse86aucs7i" path="res://scenes/entities/player.tscn" id="1_377w7"]
 [ext_resource type="Script" uid="uid://ddwlbwidioai1" path="res://scenes/levels/level.gd" id="1_b2cq8"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://bviuyivrmc56n" path="res://scenes/entities/tung_enemy.tscn" id="4_xb4v1"]
 [ext_resource type="PackedScene" uid="uid://611hyts7do66" path="res://scenes/weapons/uipistol.tscn" id="6_ouxo3"]
 [ext_resource type="PackedScene" uid="uid://c7oofx36pbc83" path="res://scenes/entities/card_pickup.tscn" id="7_mbbpy"]
+[ext_resource type="PackedScene" uid="uid://blkj3o7a2mrll" path="res://scenes/entities/end.tscn" id="8_ouxo3"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_urvlt"]
 texture = ExtResource("2_xb4v1")
@@ -173,7 +174,7 @@ tile_set = SubResource("TileSet_d4w6o")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="GrassTileMap"]
 position = Vector2(-41.1824, 9.37692)
-tile_map_data = PackedByteArray("AAD/////AAAAAAEAAAD//wAAAAAAAAEAAAD//wEAAAAAAAEAAAD//wIAAAAAAAEAAAD//wMAAAAAAAEAAAD//wQAAAAAAAEAAAD//wUAAAAAAAEAAAD//wYAAAABAAIAAAAAAAYAAAACAAMAAAABAAYAAAACAAMAAAACAAYAAAACAAMAAAADAAYAAAACAAMAAAAEAAYAAAACAAMAAAAFAAYAAAACAAMAAAAGAAYAAAACAAMAAAAHAAYAAAACAAMAAAAIAAYAAAACAAMAAAAJAAYAAAACAAMAAAAKAAYAAAACAAMAAAALAAYAAAACAAMAAAAMAAYAAAACAAMAAAANAAYAAAADAAIAAAANAAUAAAAAAAEAAAANAAQAAAAAAAEAAAANAAMAAAAAAAEAAAANAAIAAAAAAAEAAAANAAEAAAAAAAEAAAANAAAAAAAAAAEAAAANAP//AAAAAAEAAAD///7/AAABAAAAAAANAP7/AAADAAAAAAAMAP7/AAACAAMAAAALAP7/AAACAAMAAAAKAP7/AAACAAMAAAAJAP7/AAACAAMAAAAIAP7/AAACAAMAAAAHAP7/AAACAAMAAAAGAP7/AAACAAMAAAAFAP7/AAACAAMAAAAEAP7/AAACAAMAAAADAP7/AAACAAMAAAACAP7/AAACAAMAAAABAP7/AAACAAMAAAAAAP7/AAACAAMAAAA=")
+tile_map_data = PackedByteArray("AAD/////AAAAAAEAAAD//wAAAAAAAAEAAAD//wEAAAAAAAEAAAD//wIAAAAAAAEAAAD//wMAAAAAAAEAAAD//wQAAAAAAAEAAAD//wUAAAAAAAEAAAD//wYAAAABAAIAAAAAAAYAAAACAAMAAAABAAYAAAACAAMAAAACAAYAAAACAAMAAAADAAYAAAACAAMAAAAEAAYAAAACAAMAAAAFAAYAAAACAAMAAAAGAAYAAAACAAMAAAAHAAYAAAACAAMAAAAIAAYAAAACAAMAAAAJAAYAAAACAAMAAAAKAAYAAAACAAMAAAALAAYAAAACAAMAAAAMAAYAAAACAAMAAAANAAYAAAADAAIAAAANAAUAAAAAAAEAAAANAAQAAAAAAAEAAAANAAMAAAAAAAEAAAANAAIAAAAAAAEAAAANAAEAAAAAAAEAAAANAAAAAAAAAAEAAAANAP//AAAAAAEAAAD///7/AAABAAAAAAANAP7/AAADAAAAAAAMAP7/AAACAAMAAAALAP7/AAACAAMAAAAKAP7/AAACAAMAAAAJAP7/AAACAAMAAAAIAP7/AAACAAMAAAAHAP7/AAACAAMAAAAFAP7/AAACAAMAAAAEAP7/AAACAAMAAAADAP7/AAACAAMAAAACAP7/AAACAAMAAAABAP7/AAACAAMAAAAAAP7/AAACAAMAAAA=")
 tile_set = SubResource("TileSet_ouxo3")
 
 [node name="Player" parent="." instance=ExtResource("1_377w7")]
@@ -206,6 +207,7 @@ layout_mode = 2
 offset_right = 40.0
 offset_bottom = 23.0
 size_flags_vertical = 8
+theme_override_font_sizes/font_size = 24
 
 [node name="Projectiles" type="Node2D" parent="."]
 
@@ -216,5 +218,8 @@ position = Vector2(118, 52)
 
 [node name="CardPickup" parent="." instance=ExtResource("7_mbbpy")]
 position = Vector2(25, 2)
+
+[node name="End" parent="." instance=ExtResource("8_ouxo3")]
+position = Vector2(62, -45)
 
 [connection signal="blueGot" from="CardPickup" to="." method="_on_card_pickup_blue_got"]

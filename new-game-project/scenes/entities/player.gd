@@ -9,6 +9,12 @@ var vulnerable : bool = true
 func _ready() -> void:
 	pass # Replace with function body.
 
+func ending():
+	if Globals.gotBlue:
+		print("ENDING")
+	else:
+		print("gettehblue")
+
 func hit(damage):
 	if vulnerable:
 		vulnerable = false
@@ -28,12 +34,13 @@ func _process(_delta: float) -> void:
 	#Laser shooting input
 	if Input.is_action_just_pressed("primary") and $Pistol.can_shoot and Globals.ammo_amount > 0:
 		Globals.ammo_amount -= 1
-		Globals.total_amount -= 1
 		$Pistol.can_shoot = false
-		$Pistol.shoot()		
+		$Pistol.shoot()
 
 	if Input.is_action_just_pressed("reload") and Globals.total_amount > 0:
-		var toReload = min($Pistol.magCap, Globals.total_amount)
+		var toReload = min($Pistol.magCap, Globals.total_amount, $Pistol.magCap - Globals.ammo_amount)
+		$ReloadTimer.start()
+		await $ReloadTimer.timeout
 		Globals.ammo_amount += toReload
 		Globals.total_amount -= toReload
 

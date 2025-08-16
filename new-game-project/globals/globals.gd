@@ -5,6 +5,7 @@ signal health_change
 
 var player_pos : Vector2
 var player_direction
+var gotBlue = false
 
 var total_amount = 40:
 	get:
