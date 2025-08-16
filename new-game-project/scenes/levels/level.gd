@@ -7,15 +7,33 @@ var maxSpawnSize : int = 20
 var canSpawnEnemy : bool = true
 var onBreak : bool = false
 @export var tungScene : PackedScene = preload("res://scenes/entities/tung_enemy.tscn")
+
+
 func _process(_delta):
+	
+	
+	#Displaying health
+	
+	$Player/Camera2D/UI/ProgressBar.max_value = Globals.maxHealth
+	$Player/Camera2D/UI/ProgressBar.value = Globals.health
+	if Globals.health <= 25:
+		$DirectionalLight2D.color = Color("#00cbb0cd")
+		$Player/Camera2D/UI/ProgressBar.modulate = Color.RED
+	else:
+		$DirectionalLight2D.color = Color.BLACK
+		$Player/Camera2D/UI/ProgressBar.modulate = Color.GREEN
+		
 	#Displaying ammo
-	ammo_label.text = str(Globals.ammo_amount) + " / " + str(Globals.total_amount)
+	ammo_label.text = str(Globals.ammo_amount) + "/" + str(Globals.total_amount)
 	ammo_label.add_theme_font_size_override("font_size", 60)
 	if Globals.ammo_amount <= 3:
+		$Player/Camera2D/UI/Reload.visible = true
 		ammo_label.add_theme_color_override("font_color", Color.RED)
 	else:
+		$Player/Camera2D/UI/Reload.visible = false
+
 		ammo_label.add_theme_color_override("font_color", Color.WHITE)
-	roundLabel.text = str(Globals.round)
+	roundLabel.text = str(Globals.roundCount)
 	moneyLabel.text = str(Globals.money)
 	#Game loop
 	if not Globals.gameActive:
@@ -38,7 +56,7 @@ func _process(_delta):
 				#Wave done
 				$Timers/BreakTimer.start()
 				canSpawnEnemy = false
-				Globals.enemiesLeft = 6 + Globals.round * 2
+				Globals.enemiesLeft = 6 + Globals.roundCount * 2
 				onBreak = true
 			
 		
@@ -51,7 +69,7 @@ func _process(_delta):
 func _on_card_pickup_blue_got() -> void:
 	var card_instance = card_scene.instantiate() as Control
 	Globals.gotBlue = true
-	get_tree().current_scene.get_node("Player/Camera2D/UI/HBoxContainer").add_child(card_instance)
+
 
 
 func _on_enemy_spawn_timeout() -> void:
@@ -62,4 +80,8 @@ func _on_break_timer_timeout() -> void:
 	canSpawnEnemy = true
 	onBreak = false
 	print("NEW ROUND")
-	Globals.round += 1
+	Globals.roundCount += 1
+
+
+func _on_red_pickup_red_got() -> void:
+	Globals.gotRed = true

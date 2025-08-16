@@ -3,8 +3,9 @@ extends CharacterBody2D
 
 @export var max_speed: int = 100
 var speed: int = max_speed
-signal lowAmmo()
 var vulnerable : bool = true
+var canHeal = false
+var reloading = false
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass # Replace with function body.
@@ -17,13 +18,18 @@ func ending():
 
 func hit(damage):
 	if vulnerable:
+		canHeal = false
 		vulnerable = false
 		Globals.health -= damage
 		print(Globals.health)
 		$HitTimer.start()
+		$HealTimer.start()
 		
 func _process(_delta: float) -> void:
 	#Movement
+	if canHeal:
+		Globals.health += 0.1
+		
 	var direction = Input.get_vector("left", "right", "up", "down")
 	velocity = direction * speed
 	move_and_slide()
@@ -37,7 +43,8 @@ func _process(_delta: float) -> void:
 		$Pistol.can_shoot = false
 		$Pistol.shoot()
 
-	if Input.is_action_just_pressed("reload") and Globals.total_amount > 0:
+	if Input.is_action_just_pressed("reload") and not reloading and Globals.total_amount > 0:
+		reloading = true
 		var toReload = min($Pistol.magCap, Globals.total_amount, $Pistol.magCap - Globals.ammo_amount)
 		$ReloadTimer.start()
 		await $ReloadTimer.timeout
@@ -48,3 +55,11 @@ func _process(_delta: float) -> void:
 
 func _on_hit_timer_timeout() -> void:
 	vulnerable = true
+
+
+func _on_heal_timer_timeout() -> void:
+	canHeal = true
+
+
+func _on_reload_timer_timeout() -> void:
+	reloading = false

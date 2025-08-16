@@ -16,7 +16,7 @@ func _process(delta):
 	if playerInRange != null:
 		damageTimer -= delta
 		if damageTimer <= 0:
-			playerInRange.hit(20)
+			playerInRange.hit(25)
 			damageTimer = damageInterval
 
 func hit(damage):

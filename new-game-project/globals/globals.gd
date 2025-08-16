@@ -6,12 +6,15 @@ signal health_change
 var player_pos : Vector2
 var player_direction
 var gotBlue = false
+var gotRed = false
 var gameActive = true 
-var round = 1:
+var maxHealth = 75
+
+var roundCount = 1:
 	get:
-		return round
+		return roundCount
 	set (value):
-		round = value
+		roundCount = value
 
 var enemiesLeft = 6
 
@@ -38,13 +41,13 @@ var ammo_amount = 10:
 		ammo_amount = value
 		ammo_change.emit()
 
-var money = 5000:
+var money = 10000:
 	get:
 		return money
 	set(value):
 		money = value
 	
-var health = 75:
+var health = maxHealth:
 	get:
 		return health
 	set(value):
@@ -54,5 +57,5 @@ var health = 75:
 			health = value
 		health_change.emit()
 		
-		if value < 0:
+		if value <= 0:
 			Globals.gameActive = false

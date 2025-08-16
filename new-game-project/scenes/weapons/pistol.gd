@@ -4,7 +4,6 @@ var can_shoot : bool = true
 var damage : int = 5
 var magCap : int = 10
 
-signal bullet(pos, direction)
 func shoot():
 	can_shoot = false
 	var laser_markers = $LaserStarts.get_children()

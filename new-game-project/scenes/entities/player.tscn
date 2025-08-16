@@ -34,5 +34,10 @@ one_shot = true
 wait_time = 0.5
 one_shot = true
 
-[connection signal="bullet" from="Pistol" to="." method="_on_pistol_bullet"]
+[node name="HealTimer" type="Timer" parent="."]
+wait_time = 3.0
+one_shot = true
+
 [connection signal="timeout" from="HitTimer" to="." method="_on_hit_timer_timeout"]
+[connection signal="timeout" from="ReloadTimer" to="." method="_on_reload_timer_timeout"]
+[connection signal="timeout" from="HealTimer" to="." method="_on_heal_timer_timeout"]

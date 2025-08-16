@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://dmu7w2nj5wni2"]
+
+[ext_resource type="Script" uid="uid://c6fcpv0xxthpm" path="res://red_pickup.gd" id="1_g8jbt"]
+[ext_resource type="Texture2D" uid="uid://bp5ui1txdiaxc" path="res://assets/weapons/lvl2.png" id="2_qfcd5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7gjpj"]
+size = Vector2(240, 320)
+
+[node name="RedPickup" type="Area2D"]
+script = ExtResource("1_g8jbt")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.025, 0.025)
+texture = ExtResource("2_qfcd5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1.19209e-07, 2.38419e-07)
+scale = Vector2(0.025, 0.025)
+shape = SubResource("RectangleShape2D_7gjpj")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="redGot" from="." to="." method="_on_red_got"]

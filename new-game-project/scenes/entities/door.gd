@@ -16,13 +16,12 @@ func _process(_delta):
 	if playerInside and Input.is_action_just_pressed("interact"):
 		if Globals.money >= doorPrice:
 			Globals.money -= doorPrice
-			print("BOUGHT DOOR FOR %d", %doorPrice)
-			createSpawn(doorIndex)
+			createSpawn()
 			queue_free()
 		else:
-			print("povo")
+			buyLabel.text = "Not enough points"
 
-func createSpawn(doorIndex):
+func createSpawn():
 	print('creating spawns')
 	var spawnMarker1 : Marker2D = Marker2D.new()
 	var spawnMarker2 : Marker2D = Marker2D.new()
