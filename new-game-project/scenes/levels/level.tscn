@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://873d56h0mi1d"]
+
+[ext_resource type="PackedScene" uid="uid://dcse86aucs7i" path="res://scenes/entities/player.tscn" id="1_377w7"]
+[ext_resource type="Script" uid="uid://ddwlbwidioai1" path="res://scenes/levels/level.gd" id="1_b2cq8"]
+[ext_resource type="PackedScene" uid="uid://bviuyivrmc56n" path="res://scenes/entities/tung_enemy.tscn" id="4_xb4v1"]
+
+[node name="level" type="Node2D"]
+script = ExtResource("1_b2cq8")
+
+[node name="Player" parent="." instance=ExtResource("1_377w7")]
+
+[node name="Projectiles" type="Node2D" parent="."]
+
+[node name="Enemies" type="Node2D" parent="."]
+
+[node name="TungEnemy" parent="Enemies" instance=ExtResource("4_xb4v1")]
+position = Vector2(523, 189)

@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://75hwckbynuia"]
+
+[ext_resource type="Script" uid="uid://ckjm4fefr2ot4" path="res://labubu.gd" id="1_0f7yo"]
+[ext_resource type="Texture2D" uid="uid://ccyyfncckfuxy" path="res://assets/labubus/Labubu-figure-Image-png-transparent-background.png" id="2_86x34"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1uvdp"]
+size = Vector2(28, 60)
+
+[node name="labubu" type="Area2D"]
+script = ExtResource("1_0f7yo")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-2, 3)
+scale = Vector2(0.0631851, 0.0694097)
+texture = ExtResource("2_86x34")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-2, -3)
+shape = SubResource("RectangleShape2D_1uvdp")
+
+[node name="Despawn" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_shape_entered" from="." to="." method="_on_body_shape_entered"]
+[connection signal="timeout" from="Despawn" to="." method="_on_despawn_timeout"]

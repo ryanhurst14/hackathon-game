@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://dcse86aucs7i"]
+
+[ext_resource type="Script" uid="uid://boa4mpr26if16" path="res://scenes/entities/player.gd" id="1_08t41"]
+[ext_resource type="Texture2D" uid="uid://ccyyfncckfuxy" path="res://assets/labubus/Labubu-figure-Image-png-transparent-background.png" id="2_08t41"]
+[ext_resource type="PackedScene" uid="uid://cyw4jffxrxk6s" path="res://scenes/weapons/pistol.tscn" id="3_1ie0h"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b0kkn"]
+size = Vector2(53, 104)
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_08t41")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-1, -9)
+scale = Vector2(0.11179, 0.114932)
+texture = ExtResource("2_08t41")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, -17)
+shape = SubResource("RectangleShape2D_b0kkn")
+
+[node name="ShotTimer" type="Timer" parent="."]
+wait_time = 0.1
+
+[node name="Pistol" parent="." instance=ExtResource("3_1ie0h")]
+position = Vector2(40, 10)
+
+[connection signal="bullet" from="Pistol" to="." method="_on_pistol_bullet"]
