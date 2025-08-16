@@ -23,7 +23,12 @@ var ammo_amount = 10:
 	set(value):
 		ammo_amount = value
 		ammo_change.emit()
-		
+
+var money = 5000:
+	get:
+		return money
+	set(value):
+		money = value
 	
 var health = 75:
 	get:

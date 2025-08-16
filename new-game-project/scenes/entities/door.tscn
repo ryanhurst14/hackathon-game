@@ -1,0 +1,42 @@
+[gd_scene load_steps=6 format=3 uid="uid://bqawbd8k8rlwn"]
+
+[ext_resource type="Texture2D" uid="uid://d28lf7478mnwr" path="res://assets/objects/Mikeehrmantraut.webp" id="1_dn7cs"]
+[ext_resource type="Script" uid="uid://jijs83bm34o5" path="res://scenes/entities/door.gd" id="1_ewl7v"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_de05j"]
+size = Vector2(53, 37)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_htbgl"]
+size = Vector2(41, 27)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ewl7v"]
+size = Vector2(41, 26)
+
+[node name="Door" type="StaticBody2D"]
+collision_layer = 16
+collision_mask = 11
+script = ExtResource("1_ewl7v")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-6.15, -5.375)
+scale = Vector2(0.076616, 0.0713333)
+texture = ExtResource("1_dn7cs")
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 16
+collision_mask = 11
+
+[node name="Enter" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-6.5, -4.5)
+shape = SubResource("RectangleShape2D_de05j")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-6.5, -5.5)
+shape = SubResource("RectangleShape2D_htbgl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-6.5, -6)
+shape = SubResource("RectangleShape2D_ewl7v")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

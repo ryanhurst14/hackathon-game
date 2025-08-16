@@ -4,6 +4,7 @@ extends Node2D
 
 func _process(_delta):
 	
+	#Displaying ammo
 	ammo_label.text = str(Globals.ammo_amount) + " / " + str(Globals.total_amount)
 	ammo_label.add_theme_font_size_override("font_size", 60)
 	if Globals.ammo_amount <= 3:
