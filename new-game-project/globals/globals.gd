@@ -6,7 +6,21 @@ signal health_change
 var player_pos : Vector2
 var player_direction
 var gotBlue = false
+var gameActive = true 
+var round = 1:
+	get:
+		return round
+	set (value):
+		round = value
 
+var enemiesLeft = 6
+
+var enemiesAlive = 0:
+	get:
+		return enemiesAlive
+	set (value):
+		enemiesAlive = value
+		
 var total_amount = 40:
 	get:
 		if total_amount <= 0:
@@ -41,4 +55,4 @@ var health = 75:
 		health_change.emit()
 		
 		if value < 0:
-			print("DEAD")
+			Globals.gameActive = false

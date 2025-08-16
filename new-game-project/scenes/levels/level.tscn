@@ -1,10 +1,9 @@
-[gd_scene load_steps=15 format=4 uid="uid://873d56h0mi1d"]
+[gd_scene load_steps=14 format=4 uid="uid://873d56h0mi1d"]
 
 [ext_resource type="PackedScene" uid="uid://dcse86aucs7i" path="res://scenes/entities/player.tscn" id="1_377w7"]
 [ext_resource type="Script" uid="uid://ddwlbwidioai1" path="res://scenes/levels/level.gd" id="1_b2cq8"]
 [ext_resource type="Texture2D" uid="uid://dgpsf3lpr1se1" path="res://assets/Sprout Lands - Sprites - Basic pack/Tilesets/Grass.png" id="2_xb4v1"]
 [ext_resource type="Texture2D" uid="uid://cyde0r2i5dosi" path="res://assets/Sprout Lands - Sprites - Basic pack/Tilesets/Fences.png" id="3_urvlt"]
-[ext_resource type="PackedScene" uid="uid://bviuyivrmc56n" path="res://scenes/entities/tung_enemy.tscn" id="4_xb4v1"]
 [ext_resource type="PackedScene" uid="uid://611hyts7do66" path="res://scenes/weapons/uipistol.tscn" id="6_ouxo3"]
 [ext_resource type="PackedScene" uid="uid://c7oofx36pbc83" path="res://scenes/entities/card_pickup.tscn" id="7_mbbpy"]
 [ext_resource type="PackedScene" uid="uid://blkj3o7a2mrll" path="res://scenes/entities/end.tscn" id="8_ouxo3"]
@@ -205,29 +204,54 @@ theme_override_constants/separation = -56
 layout_mode = 2
 
 [node name="Ammo" type="Label" parent="Player/Camera2D/UI"]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -34.0
 offset_right = 40.0
-offset_bottom = 23.0
+grow_vertical = 0
 size_flags_vertical = 8
 theme_override_font_sizes/font_size = 24
 
 [node name="BuyDoorLabel" type="Label" parent="Player/Camera2D/UI"]
-anchors_preset = -1
-anchor_left = 0.01
-anchor_top = 0.023
-anchor_right = 0.01
-anchor_bottom = 0.023
-offset_left = -11.52
-offset_top = -14.904
-offset_right = 28.48
-offset_bottom = 8.096
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -34.5
+offset_right = 20.0
+offset_bottom = 34.5
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
 theme_override_font_sizes/font_size = 50
+
+[node name="Round" type="Label" parent="Player/Camera2D/UI"]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -40.0
+offset_top = -23.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 60
+
+[node name="Money" type="Label" parent="Player/Camera2D/UI"]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -40.0
+offset_bottom = 23.0
+grow_horizontal = 0
+theme_override_font_sizes/font_size = 60
 
 [node name="Projectiles" type="Node2D" parent="."]
 
 [node name="Enemies" type="Node2D" parent="."]
-
-[node name="TungEnemy" parent="Enemies" instance=ExtResource("4_xb4v1")]
-position = Vector2(118, 52)
 
 [node name="CardPickup" parent="." instance=ExtResource("7_mbbpy")]
 position = Vector2(25, 2)
@@ -239,14 +263,36 @@ position = Vector2(60, -341)
 
 [node name="Door1" parent="Doors" instance=ExtResource("9_icy5c")]
 position = Vector2(-17, -12)
+doorIndex = 1
 
 [node name="Door2" parent="Doors" instance=ExtResource("9_icy5c")]
 position = Vector2(-7, -114)
 rotation = 1.57329
 doorPrice = 1000
+doorIndex = 2
 
 [node name="Door" parent="Doors" instance=ExtResource("9_icy5c")]
 position = Vector2(-111, -42)
 doorPrice = 1500
+doorIndex = 3
+
+[node name="EnemySpawns" type="Node2D" parent="."]
+
+[node name="Marker2D" type="Marker2D" parent="EnemySpawns"]
+position = Vector2(156, 96)
+
+[node name="Marker2D2" type="Marker2D" parent="EnemySpawns"]
+position = Vector2(-34, 95)
+
+[node name="Timers" type="Node" parent="."]
+
+[node name="EnemySpawn" type="Timer" parent="Timers"]
+wait_time = 2.0
+
+[node name="BreakTimer" type="Timer" parent="Timers"]
+wait_time = 10.0
+one_shot = true
 
 [connection signal="blueGot" from="CardPickup" to="." method="_on_card_pickup_blue_got"]
+[connection signal="timeout" from="Timers/EnemySpawn" to="." method="_on_enemy_spawn_timeout"]
+[connection signal="timeout" from="Timers/BreakTimer" to="." method="_on_break_timer_timeout"]

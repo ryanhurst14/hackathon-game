@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 var speed: int = 30
-var health : int = 20
+var health : int = 1
 var playerInRange : Node2D = null
 var damageInterval = 1
 var damageTimer = 1
@@ -23,6 +23,8 @@ func hit(damage):
 	health -= damage
 	if health <= 0:
 		print("tung died")
+		Globals.money += 100
+		Globals.enemiesAlive -= 1
 		queue_free()
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
