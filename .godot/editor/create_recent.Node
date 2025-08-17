@@ -1,4 +1,6 @@
+AudioStreamPlayer2D
 Button
+LineEdit
 Label
 VBoxContainer
 Panel

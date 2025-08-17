@@ -16,3 +16,5 @@ res://scenes/weapons/pistol.tscn
 res://scenes/UI/you_win.tscn
 res://scenes/UI/you_win.gd
 res://scenes/entities/tung_enemy.tscn
+res://assets/super-pixel-font/tung_enemy.tscn
+res://scenes/entities/tung_enemy.gd

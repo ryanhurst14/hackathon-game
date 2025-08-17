@@ -8,6 +8,11 @@ var canSpawnEnemy : bool = true
 var onBreak : bool = false
 @export var tungScene : PackedScene = preload("res://scenes/entities/tung_enemy.tscn")
 
+func _ready():
+	Globals.startTime = Time.get_ticks_msec()
+	
+	
+	
 
 func _process(_delta):
 	#Displaying health

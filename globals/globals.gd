@@ -12,6 +12,9 @@ var gameActive = true
 var maxHealth = 75
 var pistolDamage = 25
 var enemyHealth = 50
+var startTime : int
+var endTime : int
+
 var roundCount = 1:
 	get:
 		return roundCount
@@ -43,7 +46,7 @@ var ammo_amount = 10:
 		ammo_amount = value
 		ammo_change.emit()
 
-var money = 10000:
+var money = 0:
 	get:
 		return money
 	set(value):

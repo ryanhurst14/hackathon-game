@@ -364,7 +364,7 @@ text = "R to Reload!"
 [node name="Enemies" type="Node2D" parent="."]
 
 [node name="CardPickup" parent="." instance=ExtResource("7_mbbpy")]
-position = Vector2(40, 55)
+position = Vector2(217, 235)
 
 [node name="Doors" type="Node2D" parent="."]
 
@@ -405,7 +405,7 @@ wait_time = 10.0
 one_shot = true
 
 [node name="RedPickup" parent="." instance=ExtResource("10_rmjfq")]
-position = Vector2(73, 55)
+position = Vector2(-120, 204)
 
 [node name="AmmoReload" parent="." instance=ExtResource("12_xfk5q")]
 position = Vector2(149, 27)

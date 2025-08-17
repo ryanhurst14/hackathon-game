@@ -22,6 +22,7 @@ func _process(_delta):
 	
 	if health <= 0:
 		get_tree().change_scene_to_file("res://scenes/UI/you_win.tscn")
+		Globals.endTime = Time.get_ticks_msec()
 		
 func create_shot(pos, direction):
 	var bugatti = bugattiScene.instantiate() as Area2D
@@ -33,8 +34,7 @@ func create_shot(pos, direction):
 
 func hit(takeaway):
 	health -= takeaway
-	print(health)
-
+	$AudioStreamPlayer2D.play()
 func _on_dialogue_timer_timeout() -> void:
 	buyLabel.visible = false
 

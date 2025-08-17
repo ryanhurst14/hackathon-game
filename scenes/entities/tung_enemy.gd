@@ -34,7 +34,7 @@ func hit(damage):
 	health -= damage
 	if health <= 0:
 		print("tung died")
-		Globals.money += 100
+		Globals.money += 300
 		Globals.enemiesAlive -= 1
 		queue_free()
 

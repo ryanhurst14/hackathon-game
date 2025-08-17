@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://iyuiardg76t5"]
+[gd_scene load_steps=5 format=3 uid="uid://iyuiardg76t5"]
 
 [ext_resource type="Script" uid="uid://c62bfwc8nwm0d" path="res://scenes/entities/final_boss.gd" id="1_jlfug"]
 [ext_resource type="Texture2D" uid="uid://751scqum530t" path="res://assets/enemies/Adobe Express - file.png" id="2_v5nkv"]
+[ext_resource type="AudioStream" uid="uid://82ycsymv0ypc" path="res://assets/sounds/male-attack-grunt-45747.mp3" id="3_r3imn"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6s7xh"]
 size = Vector2(249, 610)
@@ -25,6 +26,9 @@ wait_time = 5.0
 
 [node name="Timer" type="Timer" parent="."]
 autostart = true
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_r3imn")
 
 [connection signal="timeout" from="DialogueTimer" to="." method="_on_dialogue_timer_timeout"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
