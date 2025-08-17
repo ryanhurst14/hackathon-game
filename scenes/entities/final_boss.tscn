@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=3 uid="uid://iyuiardg76t5"]
+
+[ext_resource type="Script" uid="uid://c62bfwc8nwm0d" path="res://scenes/entities/final_boss.gd" id="1_jlfug"]
+[ext_resource type="Texture2D" uid="uid://751scqum530t" path="res://assets/enemies/Adobe Express - file.png" id="2_v5nkv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6s7xh"]
+size = Vector2(249, 610)
+
+[node name="FinalBoss" type="CharacterBody2D"]
+scale = Vector2(0.2, 0.2)
+collision_layer = 2
+collision_mask = 11
+script = ExtResource("1_jlfug")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(2, 1)
+texture = ExtResource("2_v5nkv")
+
+[node name="Hitbox" type="CollisionShape2D" parent="."]
+position = Vector2(31, 16)
+shape = SubResource("RectangleShape2D_6s7xh")
+
+[node name="DialogueTimer" type="Timer" parent="."]
+wait_time = 5.0
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[connection signal="timeout" from="DialogueTimer" to="." method="_on_dialogue_timer_timeout"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

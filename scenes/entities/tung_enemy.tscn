@@ -43,7 +43,6 @@ shape = SubResource("CircleShape2D_q0t6c")
 [node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
 avoidance_enabled = true
 radius = 64.0
-debug_enabled = true
 
 [connection signal="timeout" from="Timers/DamageTimer" to="." method="_on_damage_timer_timeout"]
 [connection signal="timeout" from="Timers/PathTimer" to="." method="_on_path_timer_timeout"]

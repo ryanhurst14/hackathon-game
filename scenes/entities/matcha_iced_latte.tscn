@@ -24,7 +24,6 @@ texture = ExtResource("1_m5m62")
 
 [node name="Enter" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(10, 150)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_ngora")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

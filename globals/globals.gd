@@ -7,10 +7,11 @@ var player_pos : Vector2
 var player_direction
 var gotBlue = false
 var gotRed = false
+var inFinalBoss = false
 var gameActive = true 
 var maxHealth = 75
-var pistolDamage = 1
-var enemyHealth = 2
+var pistolDamage = 25
+var enemyHealth = 50
 var roundCount = 1:
 	get:
 		return roundCount

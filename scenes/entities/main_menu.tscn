@@ -155,7 +155,7 @@ stream = ExtResource("5_thv8t")
 autoplay = true
 
 [connection signal="button_up" from="VBoxContainer/Start" to="." method="_on_button_button_up"]
-[connection signal="pressed" from="VBoxContainer/Start" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/Start" to="." method="_on_start_pressed"]
-[connection signal="pressed" from="VBoxContainer/Quit" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="VBoxContainer/Start" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/Quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="VBoxContainer/Quit" to="." method="_on_button_2_pressed"]

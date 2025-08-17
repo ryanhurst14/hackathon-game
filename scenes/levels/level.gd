@@ -10,8 +10,6 @@ var onBreak : bool = false
 
 
 func _process(_delta):
-	
-	
 	#Displaying health
 	
 	$Player/Camera2D/UI/ProgressBar.max_value = Globals.maxHealth
@@ -38,7 +36,7 @@ func _process(_delta):
 	moneyLabel.text = str(Globals.money)
 	#Game loop
 	if not Globals.gameActive:
-		get_tree().quit()
+		get_tree().change_scene_to_file("res://scenes/UI/game_over.tscn")
 	else:
 		if Globals.enemiesAlive < maxSpawnSize and not onBreak:
 			if Globals.enemiesLeft > 0:
