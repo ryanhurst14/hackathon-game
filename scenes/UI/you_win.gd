@@ -4,7 +4,7 @@ extends Control
 
 
 func _ready():
-	$VBoxContainer/Message.text = "You beat Andrew Tate and liberated all performatie males! Thank you Gregory the Labubu for your help"
+	$VBoxContainer/Message.text = "You beat Drake and liberated all performative males! Thank you Gregory the Labubu for your help"
 	$VBoxContainer/Round.text = str("You got up to round %d!") % Globals.roundCount
 	var timeTaken = (Globals.endTime - Globals.startTime) / 1000
 	$VBoxContainer/Time.text = str("You finished with a time of %d seconds!") % timeTaken

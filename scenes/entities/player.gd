@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 
-@export var max_speed: int = 100
+@export var max_speed: int = 200
 var speed: int = max_speed
 var vulnerable : bool = true
 var canHeal = false

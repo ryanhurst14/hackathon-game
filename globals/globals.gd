@@ -5,11 +5,11 @@ signal health_change
 
 var player_pos : Vector2
 var player_direction
-var gotBlue = false
-var gotRed = false
+var gotBlue = true
+var gotRed = true
 var inFinalBoss = false
 var gameActive = true 
-var maxHealth = 75
+var maxHealth = 100000
 var pistolDamage = 25
 var enemyHealth = 50
 var startTime : int
@@ -46,7 +46,7 @@ var ammo_amount = 10:
 		ammo_amount = value
 		ammo_change.emit()
 
-var money = 0:
+var money = 100000:
 	get:
 		return money
 	set(value):

@@ -1,0 +1,24 @@
+res://assets/super-pixel-font/tung_enemy.tscn::e713aef4a4c520738c134f8823f30cc3::1755402740::res://.godot/exported/133200997/export-1f3659383765a5b1daa0f5100aa57581-tung_enemy.scn
+res://scenes/entities/ammo_reload.tscn::03fcd08ac0ac3bd9a0742bfb9f0de673::1755400115::res://.godot/exported/133200997/export-0fc7bef316720aaf332ec7e6ee16173d-ammo_reload.scn
+res://scenes/entities/card_pickup.tscn::58b300a4f1457073d5557508e00a3dc1::1755364423::res://.godot/exported/133200997/export-b267bae53c089197cc438b6e6c6d5a76-card_pickup.scn
+res://scenes/entities/door.tscn::088e9bec307986b2f8256c9f7258c522::1755371375::res://.godot/exported/133200997/export-d09fdd51390925f0ea7ba755175f9318-door.scn
+res://scenes/entities/doubletap.tscn::6ca40239b3d6698af9e49e7ff198c6e1::1755390279::res://.godot/exported/133200997/export-6c918a6daa0a6d0e5c2cb55305ba66cd-doubletap.scn
+res://scenes/entities/end.tscn::a1e478b5bdb21c25a2a387c63d1bf946::1755330208::res://.godot/exported/133200997/export-e1126b89d7edc4ce07be9582cc6ca9d8-end.scn
+res://scenes/entities/final_boss.tscn::5e52a8ce66963bc286f6f5f39b48903e::1755596879::res://.godot/exported/133200997/export-9eb7d0c755e16901e100d68ad9538c60-final_boss.scn
+res://scenes/entities/jug.tscn::a64f7505871fd0728bc3c334678d1d8e::1755390279::res://.godot/exported/133200997/export-8b757ec42d09d33c10f5b1d987782845-jug.scn
+res://scenes/entities/main_menu.tscn::d1a61b24881bc3cc8086ecb8f68e0dc3::1755596879::res://.godot/exported/133200997/export-f4d963ef47dcad1bcbc6962926518897-main_menu.scn
+res://scenes/entities/matcha_iced_latte.tscn::2089105aac5ce284f9eba52f09e89a7c::1755400115::res://.godot/exported/133200997/export-96eb12e47624b4f74ef6df546e836e72-matcha_iced_latte.scn
+res://scenes/entities/player.tscn::295a0c6c608a339135aaa0086c6482f9::1755596879::res://.godot/exported/133200997/export-60191d8570ad6bb283e7c30c15192e69-player.scn
+res://scenes/entities/red_pickup.tscn::09644a4480547f8599289eb2c0080087::1755364423::res://.godot/exported/133200997/export-75fce1069dd6383ba84566aebcb2de51-red_pickup.scn
+res://scenes/entities/tung_enemy.tscn::00ec08dadc67c2fd62d5bb0c4cc47df1::1755401974::res://.godot/exported/133200997/export-922d23f706aafcfb79085eb05b54c2ba-tung_enemy.scn
+res://scenes/levels/level 2.tscn::ad796053f65934d90f87b15c657151cd::1755383517::res://.godot/exported/133200997/export-df1946f00c55ba4a2817097a916e9e50-level 2.scn
+res://scenes/levels/level.tscn::f0464cd0cc37281e62a82b7a4744f2ac::1755596879::res://.godot/exported/133200997/export-d2f84246acaf0198009608664807e4e4-level.scn
+res://scenes/UI/game_over.tscn::27ebf61d424fbbe4f0f0e208201b135e::1755402568::res://.godot/exported/133200997/export-9f3c79543e4df29eec424b308f1a20e1-game_over.scn
+res://scenes/UI/hotbar.tscn::5e9ac682113c147966f987b7adc92051::1755322731::res://.godot/exported/133200997/export-f96b4bf86fae0e35e6067c1088fa1205-hotbar.scn
+res://scenes/UI/you_win.tscn::29b373f432d8035afe48b3b132c677ee::1755596879::res://.godot/exported/133200997/export-8d72f1f2e6be3884f04e683b6505ec36-you_win.scn
+res://scenes/weapons/bugatti.tscn::a5412f4f07a169cdef9e751e9a400029::1755402568::res://.godot/exported/133200997/export-c0c612020bd718768bf9a9da75ec8f3b-bugatti.scn
+res://scenes/weapons/card_1.tscn::f898c11c9591d5f9dac3995de92dbff9::1755360223::res://.godot/exported/133200997/export-db5f3b8f33e2924685be7e279c71789e-card_1.scn
+res://scenes/weapons/labubu.tscn::cf9440a6ce08b645a63efb8b17449879::1755400115::res://.godot/exported/133200997/export-494d0f06f70de13a5792cf7caa218787-labubu.scn
+res://scenes/weapons/pistol.tscn::21c61170a510445607bbc45db5890a2f::1755402568::res://.godot/exported/133200997/export-098eea3096726e64ae5bc454c83a0e8b-pistol.scn
+res://scenes/weapons/uipistol.tscn::0c589270f1a0211a246757fa0ea7699d::1755330208::res://.godot/exported/133200997/export-f15688d79298cda528e7ac83a325646d-uipistol.scn
+res://scenes/hotbar.tscn::b693e46592249f7ac9ea7d4c8f493a57::1755364423::res://.godot/exported/133200997/export-24a34ff2c6d0dea1347af7a5ce2670db-hotbar.scn

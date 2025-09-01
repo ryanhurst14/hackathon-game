@@ -1,7 +1,7 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1755402460
+::res://::1756715375
 ammo_reload.gd::GDScript/GDScript::1516021630198053726::1755366906::0::1::::<>Area2D<><>0<>0<><>::
-bugatti.gd::GDScript::2523154045274657851::1755400921::0::1::::<>Node2D<><>0<>0<><>::
+bugatti.gd::GDScript/GDScript::2523154045274657851::1755400921::0::1::::<>Node2D<><>0<>0<><>::
 end.gd::GDScript/GDScript::8729326954093220034::1755330167::0::1::::<>Area2D<><>0<>0<><>::
 enter.gd::GDScript/GDScript::6905080141169640688::1755372020::0::1::::<>CollisionShape2D<><>0<>0<><>::
 export_presets.cfg::TextFile/TextFile::-1::1755391340::0::1::::<><><>0<>0<><>::
@@ -9,12 +9,14 @@ icon.svg::CompressedTexture2D/CompressedTexture2D::7348151227735268549::17552654
 jug.gd::GDScript/GDScript::1777766122080929536::1755371148::0::1::::<>StaticBody2D<><>0<>0<><>::
 labubu.gd::GDScript/GDScript::5494089864536444771::1755323408::0::1::::<>Node2D<><>0<>0<><>::
 red_pickup.gd::GDScript/GDScript::6959166772516580558::1755364423::0::1::::<>Area2D<><>0<>0<><>::
-::res://assets/::1755401723
+::res://assets/::1755418488
 icon.svg::CompressedTexture2D/CompressedTexture2D::2423044147973508165::1755358755::1755393541::1::::<><><>0<>0<>3d2f98372343257a5d0e3c6c26038fae<>res://.godot/imported/icon.svg-56083ea2a1f1a4f1e49773bdc6d7826c.ctex::
 labubu.gd::GDScript/GDScript::5494089864536444771::1755358602::0::1::::<>Node2D<><>0<>0<><>::
-::res://assets/enemies/::1755396823
+::res://assets/enemies/::1755418488
 Adobe Express - file.png::CompressedTexture2D/CompressedTexture2D::2309585245830573573::1755396815::1755396815::1::::<><><>0<>0<>1de383c2c23016c14b76cd4c62b0caaa<>res://.godot/imported/Adobe Express - file.png-51c7f3b4feed05a8816f1c865393880e.ctex::
 andrew.jpg::CompressedTexture2D/CompressedTexture2D::3237843949638189317::1755395896::1755395935::1::::<><><>0<>0<>5bdce1ff19892db817da49273342f97f<>res://.godot/imported/andrew.jpg-ae7e1d48f8016aa90bca54d68c9e6221.ctex::
+drake-removebg-preview.png::CompressedTexture2D/CompressedTexture2D::871706653013993508::1755418481::1755418481::1::::<><><>0<>0<>a1ccd01d5bd2fb6725fdc3a9e765e1f0<>res://.godot/imported/drake-removebg-preview.png-2cd59382e5f5ab60aab7246ca04caa4e.ctex::
+drake.png::CompressedTexture2D/CompressedTexture2D::3125875695214719148::1755418378::1755418378::1::::<><><>0<>0<>093423e35b18a8e80eca0a994896008d<>res://.godot/imported/drake.png-3828a881a7e2782292c91edb72d5c036.ctex::
 Tung-Tung-Tung-Sahur-TikTok-Meme-Character-Transparent.png::CompressedTexture2D/CompressedTexture2D::1189441824180583912::1755269405::1755393553::1::::<><><>0<>0<>551bed644ab0ed67f22d60ef8d1069e3<>res://.godot/imported/Tung-Tung-Tung-Sahur-TikTok-Meme-Character-Transparent.png-8d884b42e4e42f975c11df7a2ee5d69f.ctex::
 ::res://assets/labubus/::1755393553
 lababumain.jpg::CompressedTexture2D/CompressedTexture2D::4110955409626542601::1755268716::1755393552::1::::<><><>0<>0<>64633b1998beb89c4daf420de5a058b0<>res://.godot/imported/lababumain.jpg-2a535a0adfbd532be120eb03c1295afc.ctex::
@@ -2412,11 +2414,11 @@ Mikeehrmantraut.webp::CompressedTexture2D/CompressedTexture2D::91231638381251584
 png-clipart-jonathan-banks-breaking-bad-mike-ehrmantraut-saul-goodman-walter-white-breaking-bad-television-fictional-characters-thumbnail.png::CompressedTexture2D/CompressedTexture2D::7860737238254953648::1755339437::1755393541::1::::<><><>0<>0<>de6b8c655a92b3d93e8869376128136b<>res://.godot/imported/png-clipart-jonathan-banks-breaking-bad-mike-ehrmantraut-saul-goodman-walter-white-breaking-bad-television-fictional-characters-thumbnail.png-d33dac5b796df85d6d42d3f87c83f954.ctex::
 pngtree-funny-bear-png-image_14819852.png::CompressedTexture2D/CompressedTexture2D::2121300667466252699::1755364683::1755393541::1::::<><><>0<>0<>912c5487e8b6f99722369ee8aecf195f<>res://.godot/imported/pngtree-funny-bear-png-image_14819852.png-d4710b2099f88cfdb959e0b482441999.ctex::
 —Pngtree—plastic cup of iced matcha_21085610.png::CompressedTexture2D/CompressedTexture2D::7703690846918388539::1755365017::1755393550::1::::<><><>0<>0<>67f35282afb8159bc767c57e0b5c497e<>res://.godot/imported/—Pngtree—plastic cup of iced matcha_21085610.png-f176bbce11b0d8cea5ca444bbb90e289.ctex::
-::res://assets/sounds/::1755402469
+::res://assets/sounds/::1755402473
 24k-gold-labewbew-earrape-made-with-Voicemod.mp3::AudioStreamMP3/AudioStreamMP3::5817455566052043643::1755368236::1755393530::1::::<><><>0<>0<>7d2a0137c2d4f8958bee191d8dd986dc<>res://.godot/imported/24k-gold-labewbew-earrape-made-with-Voicemod.mp3-d8770600c9214acd1a227c1d67c670c1.mp3str::
 better-call-saul-intro.mp3::AudioStreamMP3/AudioStreamMP3::2400625953947104137::1755367640::1755393530::1::::<><><>0<>0<>3d2a2f7d96769c5af9d783f1e32d764d<>res://.godot/imported/better-call-saul-intro.mp3-526095c0ea86384431929fcc59a41ae1.mp3str::
 gun-full-reload-384507.mp3::AudioStreamMP3/AudioStreamMP3::4078365622095975514::1755367472::1755393530::1::::<><><>0<>0<>047c0b926e393df0325fd04522d67677<>res://.godot/imported/gun-full-reload-384507.mp3-c97d8390cdd483dacb42b6a2c5efa2dc.mp3str::
-male-attack-grunt-45747.mp3::AudioStreamMP3::2373431801898795128::1755402469::1755402469::1::::<><><>0<>0<>d06f00bd94052fe950f664debbc20eea<>res://.godot/imported/male-attack-grunt-45747.mp3-c6b50f2dde322d5230150d8bbbeefa2e.mp3str::
+male-attack-grunt-45747.mp3::AudioStreamMP3/AudioStreamMP3::2373431801898795128::1755402469::1755402469::1::::<><><>0<>0<>d06f00bd94052fe950f664debbc20eea<>res://.godot/imported/male-attack-grunt-45747.mp3-c6b50f2dde322d5230150d8bbbeefa2e.mp3str::
 My Happy Song (Sped-Up).mp3::AudioStreamMP3/AudioStreamMP3::4296593639656122826::1755385802::1755393530::1::::<><><>0<>0<>791288de37723b3f82bdcd82f1af6afe<>res://.godot/imported/My Happy Song (Sped-Up).mp3-3a792962efcc20cab4e70d63253e60ad.mp3str::
 my-happy-song-featuring-noodle-&-pals-super-simple-songs-(128-k-made-with-Voicemod.mp3::AudioStreamMP3/AudioStreamMP3::8446258631589236565::1755385650::1755393530::1::::<><><>0<>0<>4ccd9ecd752f34846fe4361a905985db<>res://.godot/imported/my-happy-song-featuring-noodle-&-pals-super-simple-songs-(128-k-made-with-Voicemod.mp3-ce0f5c22c6967885452f40cd0bdb2934.mp3str::
 okay-garmin-made-with-Voicemod.mp3::AudioStreamMP3/AudioStreamMP3::2213931092178730384::1755370691::1755393530::1::::<><><>0<>0<>ca4d45528f9fbab8477d027495ee81ea<>res://.godot/imported/okay-garmin-made-with-Voicemod.mp3-8d519cec88cab10bccad8d6e55214747.mp3str::
@@ -2458,9 +2460,9 @@ Tilled_Dirt_Wide_v2.png::CompressedTexture2D/CompressedTexture2D::95440514466449
 Water.png::CompressedTexture2D/CompressedTexture2D::3575838357068775171::1755310849::1755393542::1::::<><><>0<>0<>410b8aaceae8c8bca4f4a01613118288<>res://.godot/imported/Water.png-107302f57c2a828aaae45e017f971d5c.ctex::
 Wooden_House_Roof_Tilset.png::CompressedTexture2D/CompressedTexture2D::2604218465988723032::1755310849::1755393542::1::::<><><>0<>0<>0c50f67444bfcf55e0cd31b6c3835195<>res://.godot/imported/Wooden_House_Roof_Tilset.png-401b8b9977f6601f172910de421b1cfa.ctex::
 Wooden_House_Walls_Tilset.png::CompressedTexture2D/CompressedTexture2D::2102940908971354787::1755310849::1755393542::1::::<><><>0<>0<>fef2801ec47c2a9269cef083d76b7b1f<>res://.godot/imported/Wooden_House_Walls_Tilset.png-4db180902850c533714e0ba9d79a017e.ctex::
-::res://assets/super-pixel-font/::1755402203
+::res://assets/super-pixel-font/::1755402740
 BoldPixels1.4.ttf::FontFile/FontFile::728749333686054720::1755359166::1755393528::1::::<><><>0<>0<>72a176c5df2226d0f0d43caa5a5082cc<>res://.godot/imported/BoldPixels1.4.ttf-f38ce4c5b575eb18eed2c9570d90e9c6.fontdata::
-tung_enemy.tscn::PackedScene::3878159074449552595::1755402203::0::1::::<><><>0<>0<><>::uid://d2brl7tw7wb7v::::res://scenes/entities/tung_enemy.gd<>uid://dqfitk2bymihw::::res://assets/objects/48laws.jpg
+tung_enemy.tscn::PackedScene/PackedScene::3878159074449552595::1755402740::0::1::::<><><>0<>0<><>::uid://d2brl7tw7wb7v::::res://scenes/entities/tung_enemy.gd<>uid://dqfitk2bymihw::::res://assets/objects/48laws.jpg
 ::res://assets/super-pixel-font/misc/::1755358997
 README, PLEASE.txt::TextFile/TextFile::-1::1755358827::0::1::::<><><>0<>0<><>::
 ::res://assets/weapons/::1755397305
@@ -2476,49 +2478,49 @@ rust-keycard_blue (1).webp::CompressedTexture2D/CompressedTexture2D::23965862968
 index.apple-touch-icon.png::CompressedTexture2D/CompressedTexture2D::2625150848353187593::1755391342::1755393541::1::::<><><>0<>0<>b8df93488bba7fdef5256a1368de9375<>res://.godot/imported/index.apple-touch-icon.png-b21a756d869f84af832970a74d8371bc.ctex::
 index.icon.png::CompressedTexture2D/CompressedTexture2D::3107413327847795934::1755391342::1755393541::1::::<><><>0<>0<>fe5fbde7265e231a69202443b050429d<>res://.godot/imported/index.icon.png-b92c9a802ad4b78e247784454a6b506f.ctex::
 index.png::CompressedTexture2D/CompressedTexture2D::2521204252302665382::1755391342::1755393542::1::::<><><>0<>0<>1c6c657159a3ab2c1af524a27650ef46<>res://.godot/imported/index.png-0c78d14d192abe5f22f8c25928ca1ab8.ctex::
-::res://globals/::1755402191
-globals.gd::GDScript::2921118627749992512::1755402186::0::1::::<>Node<><>0<>0<><>::
-::res://scenes/::1755402460
+::res://globals/::1755599057
+globals.gd::GDScript::2921118627749992512::1755596879::0::1::::<>Node<><>0<>0<><>::
+::res://scenes/::1755419525
 hotbar.gd::GDScript/GDScript::2189597291849877399::1755363911::0::1::::<>Control<><>0<>0<><>::
 hotbar.tscn::PackedScene/PackedScene::2512924663131791004::1755364423::0::1::::<><><>0<>0<><>::uid://6gwl2x34ukb4::::res://scenes/hotbar.gd<>uid://v6d7hu77dr83::::res://assets/weapons/output-onlinepngtools.png<>uid://2jgfhaesed6f::::res://assets/weapons/lvl1.png<>uid://bp5ui1txdiaxc::::res://assets/weapons/lvl2.png
-::res://scenes/entities/::1755402460
-ammo_reload.tscn::PackedScene::6350356379555520677::1755400115::0::1::::<><><>0<>0<><>::uid://vumwi5r10im5::::res://ammo_reload.gd<>uid://bx2gak1f15x07::::res://assets/objects/Atomic_habits.jpg
+::res://scenes/entities/::1755596879
+ammo_reload.tscn::PackedScene/PackedScene::6350356379555520677::1755400115::0::1::::<><><>0<>0<><>::uid://vumwi5r10im5::::res://ammo_reload.gd<>uid://bx2gak1f15x07::::res://assets/objects/Atomic_habits.jpg
 card_pickup.gd::GDScript/GDScript::2137957882407613198::1755364221::0::1::::<>Area2D<><>0<>0<><>::
 card_pickup.tscn::PackedScene/PackedScene::7048645871948493150::1755364423::0::1::::<><><>0<>0<><>::uid://5pv4bggoxexy::::res://scenes/entities/card_pickup.gd<>uid://2jgfhaesed6f::::res://assets/weapons/lvl1.png
 door.gd::GDScript/GDScript::648794988587640366::1755367986::0::1::::<>StaticBody2D<><>0<>0<><>::
 door.tscn::PackedScene/PackedScene::3510779950584117437::1755371375::0::1::::<><><>0<>0<><>::uid://d28lf7478mnwr::::res://assets/objects/Mikeehrmantraut.webp<>uid://jijs83bm34o5::::res://scenes/entities/door.gd<>uid://bag47uj0vg3yj::::res://assets/sounds/better-call-saul-intro.mp3
-doubletap.gd::GDScript/GDScript::2026952755992621556::1755373176::0::1::::<>StaticBody2D<><>0<>0<><>::
+doubletap.gd::GDScript/GDScript::2026952755992621556::1755413507::0::1::::<>StaticBody2D<><>0<>0<><>::
 doubletap.tscn::PackedScene/PackedScene::2603658892841669183::1755390279::0::1::::<><><>0<>0<><>::uid://344u62oqpnjw::::res://scenes/entities/doubletap.gd<>uid://btpqxn0akd23c::::res://assets/objects/headphones-headset-icon-white-headphones-4877046890294e15a895441eecf6b61e.png<>uid://bt8plsov5ly3n::::res://assets/objects/laufey-101soundboards.mp3
 end.tscn::PackedScene/PackedScene::3179738981213506389::1755330208::0::1::::<><><>0<>0<><>::uid://dwms0e62bqh8u::::res://end.gd<>uid://b8pulq5stgctn::::res://assets/Sprout Lands - Sprites - Basic pack/Tilesets/Doors.png
-final_boss.gd::GDScript::7004504525608043685::1755401332::0::1::::<>CharacterBody2D<><>0<>0<><>::
-final_boss.tscn::PackedScene::612284467815555744::1755402203::0::1::::<><><>0<>0<><>::uid://c62bfwc8nwm0d::::res://scenes/entities/final_boss.gd<>uid://751scqum530t::::res://assets/enemies/Adobe Express - file.png
+final_boss.gd::GDScript/GDScript::7004504525608043685::1755402491::0::1::::<>CharacterBody2D<><>0<>0<><>::
+final_boss.tscn::PackedScene::612284467815555744::1755596879::0::1::::<><><>0<>0<><>::uid://c62bfwc8nwm0d::::res://scenes/entities/final_boss.gd<>uid://moi47xmjldhc::::res://assets/enemies/drake-removebg-preview.png<>uid://82ycsymv0ypc::::res://assets/sounds/male-attack-grunt-45747.mp3
 jug.tscn::PackedScene/PackedScene::8048023814611308038::1755390279::0::1::::<><><>0<>0<><>::uid://0lfsv3hn1t6w::::res://jug.gd<>uid://c4yoa0wis5aow::::res://assets/objects/bronze-jort-blue-front.webp<>uid://6speeuq7ia7q::::res://assets/sounds/okay-garmin-made-with-Voicemod.mp3
 main_menu.gd::GDScript/GDScript::7451332070066058680::1755386430::0::1::::<>Control<><>0<>0<><>::
-main_menu.tscn::PackedScene::3075297251146543259::1755402203::0::1::::<><><>0<>0<><>::uid://knanoxhfbph5::::res://assets/super-pixel-font/BoldPixels1.4.ttf<>uid://defql6hwhrtsq::::res://scenes/entities/main_menu.gd<>uid://debt3agnb1y7::::res://assets/objects/bg.jpg<>uid://dybwiol8bv88i::::res://assets/objects/bronze-jort-blue-front (1).webp<>uid://ccyyfncckfuxy::::res://assets/labubus/Labubu-figure-Image-png-transparent-background.png<>uid://b2hkjfsvfv82y::::res://assets/sounds/My Happy Song (Sped-Up).mp3
-male-attack-grunt-45747.mp3::AudioStreamMP3::325293224150827210::1755402452::1755402452::1::::<><><>0<>0<>a94d62c39b0fb897067860352a59711d<>res://.godot/imported/male-attack-grunt-45747.mp3-1136fb981c05993dd4202db05d9b21fb.mp3str::
-matcha_iced_latte.gd::GDScript::730752375075745938::1755398280::0::1::::<>StaticBody2D<><>0<>0<><>::
-matcha_iced_latte.tscn::PackedScene::6414503721612572565::1755400115::0::1::::<><><>0<>0<><>::uid://dh0ywsd031r5l::::res://assets/objects/—Pngtree—plastic cup of iced matcha_21085610.png<>uid://kn8nc5jidydu::::res://scenes/entities/matcha_iced_latte.gd<>uid://co5av4tub3hqp::::res://assets/sounds/24k-gold-labewbew-earrape-made-with-Voicemod.mp3
-player.gd::GDScript/GDScript::3370847532323071863::1755367557::0::1::::<>CharacterBody2D<><>0<>0<><>::
-player.tscn::PackedScene/PackedScene::215797116653951520::1755390279::0::1::::<><><>0<>0<><>::uid://boa4mpr26if16::::res://scenes/entities/player.gd<>uid://ccyyfncckfuxy::::res://assets/labubus/Labubu-figure-Image-png-transparent-background.png<>uid://cyw4jffxrxk6s::::res://scenes/weapons/pistol.tscn<>uid://im6obfaec41b::::res://assets/sounds/retro-laser-1-236669.mp3<>uid://byduc6l0ydagw::::res://assets/sounds/gun-full-reload-384507.mp3
+main_menu.tscn::PackedScene::3075297251146543259::1755596879::0::1::::<><><>0<>0<><>::uid://knanoxhfbph5::::res://assets/super-pixel-font/BoldPixels1.4.ttf<>uid://defql6hwhrtsq::::res://scenes/entities/main_menu.gd<>uid://debt3agnb1y7::::res://assets/objects/bg.jpg<>uid://dybwiol8bv88i::::res://assets/objects/bronze-jort-blue-front (1).webp<>uid://ccyyfncckfuxy::::res://assets/labubus/Labubu-figure-Image-png-transparent-background.png<>uid://b2hkjfsvfv82y::::res://assets/sounds/My Happy Song (Sped-Up).mp3
+male-attack-grunt-45747.mp3::AudioStreamMP3/AudioStreamMP3::325293224150827210::1755402452::1755402452::1::::<><><>0<>0<>a94d62c39b0fb897067860352a59711d<>res://.godot/imported/male-attack-grunt-45747.mp3-1136fb981c05993dd4202db05d9b21fb.mp3str::
+matcha_iced_latte.gd::GDScript/GDScript::730752375075745938::1755398280::0::1::::<>StaticBody2D<><>0<>0<><>::
+matcha_iced_latte.tscn::PackedScene/PackedScene::6414503721612572565::1755400115::0::1::::<><><>0<>0<><>::uid://dh0ywsd031r5l::::res://assets/objects/—Pngtree—plastic cup of iced matcha_21085610.png<>uid://kn8nc5jidydu::::res://scenes/entities/matcha_iced_latte.gd<>uid://co5av4tub3hqp::::res://assets/sounds/24k-gold-labewbew-earrape-made-with-Voicemod.mp3
+player.gd::GDScript/GDScript::3370847532323071863::1755420894::0::1::::<>CharacterBody2D<><>0<>0<><>::
+player.tscn::PackedScene::215797116653951520::1755596879::0::1::::<><><>0<>0<><>::uid://boa4mpr26if16::::res://scenes/entities/player.gd<>uid://ccyyfncckfuxy::::res://assets/labubus/Labubu-figure-Image-png-transparent-background.png<>uid://cyw4jffxrxk6s::::res://scenes/weapons/pistol.tscn<>uid://im6obfaec41b::::res://assets/sounds/retro-laser-1-236669.mp3<>uid://byduc6l0ydagw::::res://assets/sounds/gun-full-reload-384507.mp3
 red_pickup.tscn::PackedScene/PackedScene::8044799399714122063::1755364423::0::1::::<><><>0<>0<><>::uid://c6fcpv0xxthpm::::res://red_pickup.gd<>uid://bp5ui1txdiaxc::::res://assets/weapons/lvl2.png
-tung_enemy.gd::GDScript::9057478750811918601::1755402203::0::1::::<>CharacterBody2D<><>0<>0<><>::
-tung_enemy.tscn::PackedScene::-1::1755401974::0::1::::<><><>0<>0<><>::
-::res://scenes/levels/::1755402203
+tung_enemy.gd::GDScript/GDScript::9057478750811918601::1755402203::0::1::::<>CharacterBody2D<><>0<>0<><>::
+tung_enemy.tscn::PackedScene/PackedScene::4114776699438476339::1755401974::0::1::::<><><>0<>0<><>::uid://d2brl7tw7wb7v::::res://scenes/entities/tung_enemy.gd<>uid://dqfitk2bymihw::::res://assets/objects/48laws.jpg
+::res://scenes/levels/::1755596879
 level 2.tscn::PackedScene/PackedScene::6762633080100390522::1755383517::0::1::::<><><>0<>0<><>::uid://dcse86aucs7i::::res://scenes/entities/player.tscn<>uid://ddwlbwidioai1::::res://scenes/levels/level.gd<>uid://dgpsf3lpr1se1::::res://assets/Sprout Lands - Sprites - Basic pack/Tilesets/Grass.png<>uid://cyde0r2i5dosi::::res://assets/Sprout Lands - Sprites - Basic pack/Tilesets/Fences.png<>uid://bo1wcsfr47d2n::::res://assets/super-pixel-font/BoldPixels1.4.ttf<>uid://bb2jrcm6mwix5::::res://scenes/hotbar.tscn<>uid://c7oofx36pbc83::::res://scenes/entities/card_pickup.tscn<>uid://blkj3o7a2mrll::::res://scenes/entities/end.tscn<>uid://bqawbd8k8rlwn::::res://scenes/entities/door.tscn
-level.gd::GDScript::7415915733316737402::1755402096::0::1::::<>Node2D<><>0<>0<><>::
-level.tscn::PackedScene::2383998985305536551::1755402203::0::1::::<><><>0<>0<><>::uid://dcse86aucs7i::::res://scenes/entities/player.tscn<>uid://ddwlbwidioai1::::res://scenes/levels/level.gd<>uid://dgpsf3lpr1se1::::res://assets/Sprout Lands - Sprites - Basic pack/Tilesets/Grass.png<>uid://cyde0r2i5dosi::::res://assets/Sprout Lands - Sprites - Basic pack/Tilesets/Fences.png<>uid://c3l0bg1msmoa::::res://assets/Sprout Lands - Sprites - Basic pack/Tilesets/Hills.png<>uid://knanoxhfbph5::::res://assets/super-pixel-font/BoldPixels1.4.ttf<>uid://bb2jrcm6mwix5::::res://scenes/hotbar.tscn<>uid://c7oofx36pbc83::::res://scenes/entities/card_pickup.tscn<>uid://bqawbd8k8rlwn::::res://scenes/entities/door.tscn<>uid://cxnh66vlr47dx::::res://scenes/entities/matcha_iced_latte.tscn<>uid://dmu7w2nj5wni2::::res://scenes/entities/red_pickup.tscn<>uid://cwqfpaxovo3wj::::res://scenes/entities/ammo_reload.tscn<>uid://bivekmws12yhu::::res://assets/lighting/circle.png<>uid://dmwr1nrppx6ys::::res://scenes/entities/jug.tscn<>uid://bddh48dcc43u6::::res://scenes/entities/doubletap.tscn
-::res://scenes/UI/::1755402380
-game_over.gd::GDScript::276611008868965319::1755400339::0::1::::<>Control<><>0<>0<><>::
-game_over.tscn::PackedScene::6806060265163881501::1755402203::0::1::::<><><>0<>0<><>::uid://knanoxhfbph5::::res://assets/super-pixel-font/BoldPixels1.4.ttf<>uid://d680i2bvcbwx::::res://scenes/UI/game_over.gd
+level.gd::GDScript/GDScript::7415915733316737402::1755402096::0::1::::<>Node2D<><>0<>0<><>::
+level.tscn::PackedScene::2383998985305536551::1755596879::0::1::::<><><>0<>0<><>::uid://dcse86aucs7i::::res://scenes/entities/player.tscn<>uid://ddwlbwidioai1::::res://scenes/levels/level.gd<>uid://dgpsf3lpr1se1::::res://assets/Sprout Lands - Sprites - Basic pack/Tilesets/Grass.png<>uid://cyde0r2i5dosi::::res://assets/Sprout Lands - Sprites - Basic pack/Tilesets/Fences.png<>uid://c3l0bg1msmoa::::res://assets/Sprout Lands - Sprites - Basic pack/Tilesets/Hills.png<>uid://knanoxhfbph5::::res://assets/super-pixel-font/BoldPixels1.4.ttf<>uid://bb2jrcm6mwix5::::res://scenes/hotbar.tscn<>uid://c7oofx36pbc83::::res://scenes/entities/card_pickup.tscn<>uid://bqawbd8k8rlwn::::res://scenes/entities/door.tscn<>uid://cxnh66vlr47dx::::res://scenes/entities/matcha_iced_latte.tscn<>uid://dmu7w2nj5wni2::::res://scenes/entities/red_pickup.tscn<>uid://cwqfpaxovo3wj::::res://scenes/entities/ammo_reload.tscn<>uid://bivekmws12yhu::::res://assets/lighting/circle.png<>uid://dmwr1nrppx6ys::::res://scenes/entities/jug.tscn<>uid://bddh48dcc43u6::::res://scenes/entities/doubletap.tscn
+::res://scenes/UI/::1755596879
+game_over.gd::GDScript/GDScript::276611008868965319::1755400339::0::1::::<>Control<><>0<>0<><>::
+game_over.tscn::PackedScene/PackedScene::6806060265163881501::1755402568::0::1::::<><><>0<>0<><>::uid://knanoxhfbph5::::res://assets/super-pixel-font/BoldPixels1.4.ttf<>uid://d680i2bvcbwx::::res://scenes/UI/game_over.gd
 hotbar.tscn::PackedScene/PackedScene::158005271264031879::1755322731::0::1::::<><><>0<>0<><>::
-you_win.gd::GDScript::1835535730914093481::1755402377::0::1::::<>Control<><>0<>0<><>::
-you_win.tscn::PackedScene::2786774266867346375::1755402377::0::1::::<><><>0<>0<><>::uid://1ffage28ycsn::::res://scenes/UI/you_win.gd<>uid://knanoxhfbph5::::res://assets/super-pixel-font/BoldPixels1.4.ttf
-::res://scenes/weapons/::1755402203
-bugatti.tscn::PackedScene::4764905348838362753::1755402203::0::1::::<><><>0<>0<><>::uid://bb7h8jercx67h::::res://bugatti.gd<>uid://cpibglfpipkdi::::res://assets/objects/car-removebg-preview.png
+you_win.gd::GDScript/GDScript::1835535730914093481::1755419521::0::1::::<>Control<><>0<>0<><>::
+you_win.tscn::PackedScene::2786774266867346375::1755596879::0::1::::<><><>0<>0<><>::uid://1ffage28ycsn::::res://scenes/UI/you_win.gd<>uid://knanoxhfbph5::::res://assets/super-pixel-font/BoldPixels1.4.ttf
+::res://scenes/weapons/::1755402568
+bugatti.tscn::PackedScene/PackedScene::4764905348838362753::1755402568::0::1::::<><><>0<>0<><>::uid://bb7h8jercx67h::::res://bugatti.gd<>uid://cpibglfpipkdi::::res://assets/objects/car-removebg-preview.png
 card_1.gd::GDScript/GDScript::8937158858185191023::1755324343::0::1::::<>Control<><>0<>0<><>::
 card_1.tscn::PackedScene/PackedScene::5185890076500757964::1755360223::0::1::::<><><>0<>0<><>::uid://bae6oqv51nsem::::res://assets/weapons/rust-keycard_blue (1).webp
 labubu.gd::GDScript/GDScript::8279810420267795222::1755268263::0::1::::<>Area2D<><>0<>0<><>::
-labubu.tscn::PackedScene::2308438756026888808::1755400115::0::1::::<><><>0<>0<><>::uid://ckjm4fefr2ot4::::res://labubu.gd<>uid://ccyyfncckfuxy::::res://assets/labubus/Labubu-figure-Image-png-transparent-background.png
+labubu.tscn::PackedScene/PackedScene::2308438756026888808::1755400115::0::1::::<><><>0<>0<><>::uid://ckjm4fefr2ot4::::res://labubu.gd<>uid://ccyyfncckfuxy::::res://assets/labubus/Labubu-figure-Image-png-transparent-background.png
 pistol.gd::GDScript/GDScript::9090326839286184454::1755372417::0::1::::<>Node2D<><>0<>0<><>::
-pistol.tscn::PackedScene::6504567061633087808::1755402203::0::1::::<><><>0<>0<><>::uid://d2romckfkc727::::res://scenes/weapons/pistol.gd<>uid://v6d7hu77dr83::::res://assets/weapons/output-onlinepngtools.png
+pistol.tscn::PackedScene/PackedScene::6504567061633087808::1755402568::0::1::::<><><>0<>0<><>::uid://d2romckfkc727::::res://scenes/weapons/pistol.gd<>uid://v6d7hu77dr83::::res://assets/weapons/output-onlinepngtools.png
 uipistol.tscn::PackedScene/PackedScene::2231120407526243341::1755330208::0::1::::<><><>0<>0<><>::uid://dyf5cfr0s643x::::res://assets/weapons/png-clipart-pixel-art-digital-art-pixel-gun-angle-vehicle-thumbnail.png
